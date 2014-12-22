@@ -10,19 +10,16 @@
 Pod::Spec.new do |s|
   s.name             = "JAQCategories"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JAQCategories."
+  s.summary          = "Useful categories"
   s.description      = <<-DESC
-                       An optional longer description of JAQCategories
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Some useful categories
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JAQCategories"
+  s.homepage         = "https://github.com/javierquerol/JAQCategories"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Javier Querol" => "querol.javi@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JAQCategories.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/javierquerol/JAQCategories.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/javierquerol'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -34,5 +31,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'CocoaSecurity'
 end
